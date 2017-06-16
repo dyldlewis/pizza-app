@@ -40,7 +40,7 @@ $(document).ready(function() {
     $("#toppingAmount").text(toppings.length);
     $("#customer").text(orderName);
     $("#reciept").text(cost);
-    $("#result").show();
+    $("#result").fadeIn();
     console.log(orderName);
     console.log(size);
     console.log(toppings);

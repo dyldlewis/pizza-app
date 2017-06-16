@@ -35,6 +35,8 @@ body {
 
 #result {
   display: none;
+  color: white;
+  font-size: 14px;
 }
 
 .menu {
