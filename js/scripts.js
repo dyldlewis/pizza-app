@@ -1,6 +1,6 @@
-//=====================
+//=======================
 //     Back end Logic
-//=====================
+//=======================
 function Order(orderName, size, toppings) {
   this.order = orderName;
   this.size = size;
@@ -8,33 +8,18 @@ function Order(orderName, size, toppings) {
   this.cost = 0;
 };
 
-
 Order.prototype.sizeCost = function() {
   if (this.size === "Small") {
-      this.cost = 8 + (2.50 * this.toppings.length);
+      this.cost = 8 + (2 * this.toppings.length);
   } else if (this.size === "Medium") {
-    this.cost = 10 + (2.50 * this.toppings.length);
+    this.cost = 10 + (2 * this.toppings.length);
   } else if (this.size === "Large") {
-    this.cost = 12 + (2.50 * this.toppings.length)
+    this.cost = 12 + (2 * this.toppings.length)
   } else if (this.size === "Extra Large") {
-    this.cost = 14 + (2.50 * this.toppings.length)
+    this.cost = 14 + (2 * this.toppings.length)
   }
   return this.cost;
 };
-
-// Order.prototype.totalCost = function(cost) {
-//   if (this.toppings.length === 1) {
-//     this.cost = cost + 2.50;
-//   }
-// };
-
-
-
-
-
-
-
-
 
 //==========================
 //      Front end Logic
@@ -51,7 +36,11 @@ $(document).ready(function() {
       toppings.push(topping);
     });
     var cost = newOrder.sizeCost()
-    $("#reciept").text(cost)
+    $("#orderSize").text(size);
+    $("#toppingAmount").text(toppings.length);
+    $("#customer").text(orderName);
+    $("#reciept").text(cost);
+    $("#result").show();
     console.log(orderName);
     console.log(size);
     console.log(toppings);

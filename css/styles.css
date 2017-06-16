@@ -1,0 +1,48 @@
+img {
+  width: 200px;
+  height: 200px;
+  float: right;
+}
+
+.jumbotron {
+  background-color: green;
+  color: red;
+  font-family: fantasy;
+}
+
+
+#form {
+  margin-top: 30px;
+}
+
+#size {
+  width: 330px;
+}
+
+.form-group h1 {
+  color: red;
+  font-family: fantasy;
+}
+
+body {
+  background-color: green;
+}
+
+#customer {
+  color: red;
+  font-family: fantasy;
+}
+
+#result {
+  display: none;
+}
+
+.menu {
+  float: right;
+  color: white;
+}
+
+.menu h1 {
+  color: red;
+  font-family: fantasy;
+}

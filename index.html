@@ -9,7 +9,12 @@
   </head>
   <body>
     <div class="container">
-      <h1>Dylan's Stupid Good Pizza</h1>
+      <div class="jumbotron">
+
+
+        <h1>Dylan's Stupid Good Pizza</h1>
+        <img src="img/pizza.png" alt="pizza">
+      </div>
       <form id="order">
         <div class="form-group">
           <label for="order-name">Who is this order for?</label>
@@ -22,6 +27,18 @@
           <option>Large</option>
           <option>Extra Large</option>
         </select>
+        <div class="menu">
+          <h1>Menu</h1>
+          <h4>All toppings are $2 each</h4>
+          <ul>
+            <li>Cheese</li>
+            <li>Pepperoni</li>
+            <li>Green Peppers</li>
+            <li>Bacon</li>
+            <li>Sausage</li>
+            <li>Tomatoes</li>
+          </ul>
+        </div>
         <div class="form-group">
           <h1>Select toppings</h1>
           <input type="checkbox" name="toppings" value="cheese">Cheese<br>
@@ -33,7 +50,10 @@
         </div>
         <button type="submit">Place Order</button>
       </form>
-      <p>Your pizza cost: <span id="reciept"></span></p>
+      <h3 id="customer"></h3>
+      <div id="result">
+        <p>Your <span id="orderSize"></span> <span id="toppingAmount"></span> topping pizza cost: $<span id="reciept"></span></p>
+      </div>
     </div>
   </body>
 </html>
