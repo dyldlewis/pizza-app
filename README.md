@@ -1,6 +1,6 @@
 # Pizza App
 
-#### This app let's your customize a pizza for order
+#### This app let's you customize a pizza for order
 
 #### By Dylan Lewis
 
